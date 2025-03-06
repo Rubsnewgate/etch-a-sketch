@@ -27,14 +27,14 @@ const displaySection = (section) => {
 
 function setGridSize () {
     const errorMessage = domElements.errorMessage
-    const userDesireSize = parseInt(domElements.userDesireSize.value)
+    const userDesiredSize = parseInt(domElements.userDesireSize.value)
 
-    if(userDesireSize <= 0 || userDesireSize > 100) {
+    if(userDesiredSize <= 0 || userDesiredSize > 100) {
         errorMessage.style.display = 'block'
     }
     else {
         errorMessage.style.display = 'none'
-        gridSize = userDesireSize
+        gridSize = userDesiredSize
     }
 }
 
@@ -85,7 +85,7 @@ function startDrawing () {
 }
 
 // buttons event handler
-domElements.updateGridSize.addEventListener('click', setGridSize())
+domElements.updateGridSize.addEventListener('click', setGridSize)
 
 domElements.rainbowPencil.addEventListener('click', () => {
     rainbowPencil = true

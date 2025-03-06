@@ -20,4 +20,4 @@ git clone `git@github.com:Rubsnewgate/etch-a-sketch.git`
 
 2. Open the index.html file in your browser
 
-**Current version**: 1.0.0
+**Current version**: 1.0.1
