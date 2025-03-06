@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Etch-a-sketch </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title"> Etch-a-sketch </h1>
+    </header>
+
+    <section class="welcome-section">
+        <div class="update-canvas">
+            <p class="canvas-description">
+                By default, the grid is 16x16. If you want to change the size up
+                to a maximum of 100, enter the desired grid size (a single number):
+            </p>
+
+            <div class="custom-input">
+                <input id="user-desired-size" type="text" placeholder="16 (default value)">
+                <button class="update-grid btn">
+                    Update grid
+                </button>
+            </div>
+
+            <p class="error-message hidden"> Please enter a number between 1 and 100! </p>
+        </div>
+
+        <div class="update-pencil">
+            <p class="pencil-description">
+                By default, the pencil is black. If you want to use our rainbow pencil,
+                click the button below.
+            </p>
+
+            <button class="rainbow-pencil btn">
+                Rainbow pencil
+            </button>
+        </div>
+
+        <button class="start-drawing btn"> Start drawing </button>
+    </section>
+
+    <section class="etch-a-sketch hidden">
+        <div class="canvas">
+        </div>
+    </section>
+
+    <div class="controls hidden">
+        <div class="left-control"></div>
+
+        <button class="restart btn">
+            Restart page
+        </button>
+
+        <div class="right-control"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
